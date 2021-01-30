@@ -1,10 +1,12 @@
 {
   "manifest_version": 2,
 
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
+  "name": "9minecraft helper modpack creator",
+  "description": "Chrome Extension, For help modpack creation with mods on 9minecraft",
   "version": "1.0",
-
+  "icons": {
+      "128": "icon.png"
+  },
   "options_ui": {
     "page": "options.html",
     "chrome_style": true
@@ -17,7 +19,7 @@
 
   "content_scripts": [
       {
-          "matches": ["<all_urls>"],
+          "matches": ["http://*.9minecraft.net/*", "http://9minecraft.net/*"],
           "js": ["js/vendor.js", "js/content_script.js"]
       }
   ],

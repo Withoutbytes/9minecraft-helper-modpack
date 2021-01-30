@@ -1,5 +1,5 @@
 function polling() {
-  console.log("polling");
+  console.log("jump oi kkk ");
   setTimeout(polling, 1000 * 30);
 }
 
